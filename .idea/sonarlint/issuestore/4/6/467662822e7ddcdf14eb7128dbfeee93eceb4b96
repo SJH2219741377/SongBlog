@@ -1,0 +1,9 @@
+
+[	java:S112h"FDefine and throw a dedicated exception instead of using a generic one.(ÜÅ‚ú
+
+java:S1488"]Immediately return this expression instead of assigning it to the temporary variable "token".(ŞéÕİøÿÿÿÿ8ıä¨éã0
+v
+java:S1488]"[Immediately return this expression instead of assigning it to the temporary variable "key".(û½›ÿÿÿÿÿ
+c
+java:S5361"HReplace this call to "replaceAll()" by a call to the "replace()" method.(ŞéÕİøÿÿÿÿ
+N	java:S106T"9Replace this use of System.out or System.err by a logger.(µ–ğ

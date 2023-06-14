@@ -1,0 +1,28 @@
+server:
+  port: 7777
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/song_blog?characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  servlet: # 文件上传配置
+    multipart:
+      max-file-size: 2MB
+      max-request-size: 5MB
+mybatis-plus:
+  configuration:
+    # 日志打印
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config: # 数据库逻辑删除配置
+      logic-delete-field: delFlag # 逻辑删除全局属性名
+      logic-delete-value: 1 # 逻辑删除全局值（默认 1、表示已删除）
+      logic-not-delete-value: 0 # 逻辑未删除全局值（默认 0、表示未删除）
+      id-type: auto # 数据库id自增
+#  mapper-locations: classpath*:/mapper/**/*.xml # xml默认存放路径
+oss: # 七牛云OSS
+  accessKey: 45XqUrefPYLjVNxe3Sn9F4YO1A7aTUAtFlV9hv7B
+  secretKey: rUrwy70SuXvC0_I5hfXHt2gi-mcToyNyJCCkENVA
+  bucket: song--blog
+  cdn: http://rqsotnt5k.hn-bkt.clouddn.com/
